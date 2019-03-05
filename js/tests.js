@@ -86,7 +86,6 @@ describe('Testear las funciones de la Clase Listado', function () {
     it('Dado un rubro, devuelve varios restaurantes', function(){
       var busqueda = listado.obtenerRestaurantes('Hamburguesa', null, null)
       var resultadoEsperado = [listadoDeRestaurantes[2], listadoDeRestaurantes[10], listadoDeRestaurantes[12], listadoDeRestaurantes[21]];
-      console.log(resultadoEsperado);
       expect(busqueda).to.be.eql(resultadoEsperado);
     })
   })
